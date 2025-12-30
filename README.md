@@ -1,5 +1,7 @@
 # Projeto-Integrador-IFB
 
+# Este projeto é o seguinte: 
+
 Projeto Integrador realizado por:  
 **Ester Luiza Souza Campos, Meirejane Figueredo Chaves e Naylanne Lissa Gomes Cunha**  
 Curso **Backend - Python com Django** no **IFB/Riacho Fundo**
