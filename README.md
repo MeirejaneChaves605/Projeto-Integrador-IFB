@@ -356,6 +356,6 @@ python manage.py importaCSV
  * Execução:
    python manage.py runserver
 
-Desenvolvido por: Ester Luiza Souza Campos, Meirejane Figueredo Chaves e Naylanne Lissa Gomes Cunha
-Orientador: Henrique Freitas (IFB)
+* Desenvolvido por: Ester Luiza Souza Campos, Meirejane Figueredo Chaves e Naylanne Lissa Gomes Cunha
+* Orientador: Henrique Freitas (IFB)
 
