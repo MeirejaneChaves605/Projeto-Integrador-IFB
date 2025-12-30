@@ -371,15 +371,16 @@ API de Gestão de Portfólio com filtros avançados, autenticação JWT e docume
 # 🏦 Innova_api - Gerenciador de Portfólio de TI
 
 # 📌 Sumário
- * Visão Geral
- * Problema que Resolve
- * Objetivos Principais
- * Público-Alvo
- * Funcionalidades de Alto Nível
- * Pacotes Utilizados
- * Estrutura do Projeto
- * Documentação da API
- * Configuração do Ambiente
+- [Visão Geral](#visão-geral)
+- [Problema que Resolve](#problema-que-resolve)
+- [Objetivos Principais](#objetivos-principais)
+- [Público Alvo](#público-alvo)
+- [Funcionalidades de Alto Nível](#funcionalidades-de-alto-nível)
+- [Pacotes Utilizados](#pacotes-utilizados)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Diagrama de Banco de Dados](#diagrama-de-banco-de-dados)
+- [Documentação da API](#documentação-da-api)
+- [Configuração do Ambiente](#configuração-do-ambiente)
 # 🌐 Visão Geral
 A InnovaBank API é uma solução robusta de backend desenvolvida para a centralização e governança do portfólio de projetos de TI do banco. O sistema permite o monitoramento de ciclos de vida de software, controle orçamentário e mapeamento de dependências tecnológicas, servindo como fonte de dados para dashboards executivos e auditorias de infraestrutura.
 # ⚠️ Problema que Resolve
@@ -570,10 +571,11 @@ python manage.py importaCSV
    python manage.py runserver
 
   #  📊 Diagrama de Banco de Dados
+  ```text
 erDiagram
     DEPARTAMENTO ||--o{ PROJETO : "possui"
     PROJETO }o--o{ TECNOLOGIA : "utiliza"
-
+```
 # 📖 Documentação da API
 # A API utiliza o padrão OpenAPI 3.0. Com o servidor rodando, acesse:
  * Swagger UI: http://127.0.0.1:8000/api/schema/swagger-ui/
