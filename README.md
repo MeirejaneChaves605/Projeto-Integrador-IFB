@@ -322,7 +322,6 @@ innova_api_root/
 │   └── urls.py
 ├── frontend/
 ├── static/
-├── .gitignore
 ├── README.md
 ├── requirements.txt
 ├── manage.py
