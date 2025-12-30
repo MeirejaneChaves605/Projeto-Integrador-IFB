@@ -467,9 +467,11 @@ python manage.py importaCSV # Popula o banco com os CSVs iniciais
 
 # Diagrama de Banco de Dados
 Abaixo está a representação visual do modelo de dados implementado no models.py:
+  ```text
 erDiagram
     DEPARTAMENTO ||--o{ PROJETO : "possui"
     PROJETO }o--o{ TECNOLOGIA : "utiliza"
+```
 
   #  DEPARTAMENTO {
         int id
@@ -510,6 +512,10 @@ erDiagram
 | POST | /api/v1/token/ | Obtém token JWT (Login) | Livre |
 | POST | /api/v1/projetos/ | Cria novo projeto | Token JWT |
 | GET | /api/v1/departamentos/ | Lista departamentos | Livre |
+# A API utiliza o padrão OpenAPI 3.0. Com o servidor rodando, acesse:
+ * Swagger UI: http://127.0.0.1:8000/api/schema/swagger-ui/
+ * Admin Django: http://127.0.0.1:8000/admin/
+
 # Configuração do Ambiente
  * Instalação:
    git clone https://github.com/MeirejaneChaves605/Projeto-Integrador-IFB.git
@@ -522,33 +528,16 @@ pip install -r requirements.txt
 python manage.py importaCSV
 
  * Execução:
-   python manage.py runserver
-
-  #  📊 Diagrama de Banco de Dados
-  ```text
-erDiagram
-    DEPARTAMENTO ||--o{ PROJETO : "possui"
-    PROJETO }o--o{ TECNOLOGIA : "utiliza"
-```
-# 📖 Documentação da API
-# A API utiliza o padrão OpenAPI 3.0. Com o servidor rodando, acesse:
- * Swagger UI: http://127.0.0.1:8000/api/schema/swagger-ui/
- * Admin Django: http://127.0.0.1:8000/admin/
-⚙️ Configuração do Ambiente
- * Clone o repositório:
-   git clone https://github.com/seu-usuario/innovabank.git
-
- * Configure o Backend:
-   python -m venv venv
+python manage.py runserver
+* Configure o Backend:
+python -m venv venv
 source venv/bin/activate # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 python manage.py migrate
 python manage.py importaCSV
 python manage.py runserver
 
- * Acesse o Frontend:
-   Basta abrir o arquivo frontend/index.html em qualquer navegador moderno ou pelo o Live Server
-
+ 
 * Desenvolvido por: Ester Luiza Souza Campos, Meirejane Figueredo Chaves e Naylanne Lissa Gomes Cunha
 * Orientador: Henrique Freitas (IFB)
 
