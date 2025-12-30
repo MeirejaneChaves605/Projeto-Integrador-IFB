@@ -96,8 +96,12 @@ Projeto Integrador realizado por:
 Curso **Backend - Python com Django** no **IFB/Riacho Fundo**
 
 ---
+# 🏦 Innova_api - Gerenciador de Portfólio de TI
 
-## Descrição do Projeto
+O Innova_api é uma solução centralizada desenvolvida para a DigitalFlow Solutions. Trata-se de uma API moderna e segura projetada para gerenciar o portfólio de iniciativas de TI do banco, permitindo o controle de projetos, departamentos e tecnologias utilizadas em toda a organização.
+
+## 🛠️ Descrição do Software
+Este sistema foi construído para resolver a fragmentação de dados no banco. Ele permite que gestores controlem orçamentos, status de execução e riscos tecnológicos, enquanto fornece uma interface pública (interna) para consulta de dados via Dashboard ou ferramentas de BI.
 O Projeto Integrador consistiu no desenvolvimento de uma API pela empresa **DigitalFlow Solutions** (empresa de tecnologia especializada em plataformas corporativas) 
 para o banco de grande porte **InnovaBank**, que precisava de um sistema moderno para gerenciar seu portfólio interno de projetos de TI.
 
