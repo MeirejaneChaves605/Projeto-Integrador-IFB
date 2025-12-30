@@ -413,8 +413,9 @@ Instituições financeiras frequentemente sofrem com a "Shadow IT" e a fragmenta
 | DRF Spectacular | Latest | Geração de documentação Swagger UI. |
 | CORS Headers | Latest | Permite integração entre domínios (Frontend/Backend). |
 
-🏗️ Estrutura do Projeto
-O projeto é dividido entre uma API RESTful e um cliente web estático.
+# 🏗️ Estrutura do Projeto
+* O projeto é dividido entre uma API RESTful e um cliente web estático.
+  
 ```text
 🔙 Backend
 backend/
