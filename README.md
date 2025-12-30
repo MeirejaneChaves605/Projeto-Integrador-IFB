@@ -485,6 +485,7 @@ innova_api_root/
 ├── requirements.txt
 ├── manage.py
 └── db.sqlite3
+```
 
 Diagrama de Banco de Dados
 Abaixo está a representação visual do modelo de dados implementado no models.py:
