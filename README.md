@@ -281,6 +281,7 @@ source venv/bin/activate
 📡 Documentação da API
 A API utiliza o padrão REST e a documentação interativa pode ser acessada enquanto o servidor estiver rodando:
  * Swagger UI: http://127.0.0.1:8000/api/schema/swagger-ui/
+ * Swagger UI: http://127.0.0.1:8000/api/docs/
  * Esquema OpenAPI: /api/schema/
 Endpoints Principais:
  * GET /api/v1/projetos/: Lista todos os projetos (Acesso Livre).
