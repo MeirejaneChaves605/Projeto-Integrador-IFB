@@ -376,27 +376,29 @@ API de Gestão de Portfólio com filtros avançados, autenticação JWT e docume
 - [Documentação da API](#documentação-da-api)
 - [Configuração do Ambiente](#configuração-do-ambiente)
 
-# 🌐 Visão Geral
+#  Visão Geral
 A InnovaBank API é uma solução robusta de backend desenvolvida para a centralização e governança do portfólio de projetos de TI do banco. O sistema permite o monitoramento de ciclos de vida de software, controle orçamentário e mapeamento de dependências tecnológicas, servindo como fonte de dados para dashboards executivos e auditorias de infraestrutura.
 # ⚠️ Problema que Resolve
 Instituições financeiras frequentemente sofrem com a "Shadow IT" e a fragmentação de informações sobre projetos em andamento. A API resolve a falta de visibilidade sobre quais tecnologias estão sendo adotadas, o risco associado a cada iniciativa e a alocação orçamentária por departamento, substituindo planilhas manuais por um banco de dados relacional íntegro.
-# 🎯 Objetivos Principais
+#  Objetivos Principais
  * Centralização Tecnológica: Mapear quais frameworks e linguagens são usados em cada projeto.
  * Gestão de Risco e Status: Monitorar o progresso das entregas e o nível de criticidade (Baixo a Crítico).
  * Transparência Orçamentária: Controlar os custos alocados a cada departamento.
  * Interoperabilidade: Fornecer dados via JSON para o frontend de monitoramento em tempo real.
-# 👥 Público Alvo
+   
+#  Público Alvo
  * CTOs e Gestores de TI: Para visão macro do portfólio.
  * Auditores: Para verificação de conformidade tecnológica.
  * Desenvolvedores: Para consulta de padrões de tecnologias adotadas pela empresa.
-# 🛠️ Funcionalidades de Alto Nível
+   
+#  Funcionalidades de Alto Nível
  * CRUD de Projetos: Gestão completa com validação de datas e orçamentos.
  * Importação em Lote: Script customizado (importaCSV) para carga inicial de dados legados via terminal.
  * Exportação de Dados: Endpoints específicos para gerar relatórios em formato CSV de Departamentos e Tecnologias.
  * Segurança JWT: Autenticação via tokens (Simple JWT) para operações de escrita.
  * Filtros Avançados: Busca por nome, status e ordenação cronológica diretamente via parâmetros de URL.
    
-# 📦 Pacotes Utilizados
+#  Pacotes Utilizados
 | Pacote | Versão | Descrição |
 |---|---|---|
 | Django | 6.0 | Framework Web principal. |
@@ -406,11 +408,11 @@ Instituições financeiras frequentemente sofrem com a "Shadow IT" e a fragmenta
 | DRF Spectacular | Latest | Geração de documentação Swagger UI. |
 | CORS Headers | Latest | Permite integração entre domínios (Frontend/Backend). |
 
-# 🏗️ Estrutura do Projeto
+#  Estrutura do Projeto
 * O projeto é dividido entre uma API RESTful e um cliente web estático.
   
 ```text
-🔙 Backend
+ Backend
 backend/
 ├── innova_api/ # Configurações do projeto Django
 ├── portfolio/ # Aplicação de negócios
@@ -425,7 +427,7 @@ backend/
 
 ```
 ```text
-🎨 Frontend
+ Frontend
 frontend/
 ├── index.html # Interface de usuário (Dashboard)
 ├── style.css # Estilização e responsividade
