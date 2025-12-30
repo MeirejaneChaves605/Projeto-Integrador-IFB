@@ -407,6 +407,7 @@ innova_api_root/
 ├── requirements.txt
 ├── manage.py
 └── db.sqlite3
+```
 
 Documentação da API
 A documentação interativa está disponível em /api/v1/schema/swagger-ui/.
