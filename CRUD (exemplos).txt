@@ -1,0 +1,83 @@
+curl -X POST http://127.0.0.1:8000/api/v1/departamentos/ \
+     -H "Content-Type: application/json" \
+     -d '{
+           "nome": "Testes",
+           "gestor": "Carlos",
+           "descricao": "Gerenciamento de testes",
+           "ativo": true
+          }'
+
+
+curl -X POST http://127.0.0.1:8000/api/v1/tecnologias/ \
+     -H "Content-Type: application/json" \
+     -d '{
+           "nome": "Selenium",
+           "tipo": "Ferramenta",
+           "versao": "4.39",
+           "fornecedor": "ThoughtWorks"
+           "descricao": "Ferramenta para testes automatizados"
+         }'
+
+
+curl -X POST http://127.0.0.1:8000/api/v1/projetos/ \
+     -H "Content-Type: application/json" \
+     -d '{
+           "nome": "Teste novo Portal Web",
+           "descricao": "Verificação das mudanças implementadas no portal",
+           "departamento": 6,
+           "data_inicio": "2025-12-01",
+           "status": "Planejado",
+           "risco": "Medio",
+           "orcamento": "50000.00",
+           "tecnologias": [6]
+         }'
+
+
+curl -X PUT http://127.0.0.1:8000/api/v1/departamentos/1/ \
+     -H "Content-Type: application/json" \
+     -d '{
+           "nome": "Tecnologia",
+           "gestor": "Ana",
+           "descricao": "Departamento atualizado",
+           "ativo": true
+         }'
+
+
+curl -X PUT http://127.0.0.1:8000/api/v1/tecnologias/2/ \
+     -H "Content-Type: application/json" \
+     -d '{
+           "nome": "Python",
+           "tipo": "Linguagem",
+           "versao": "3.12",
+           "fornecedor": "PSF"
+           "descricao": "Linguagem de propósito geral e data science."
+         }'
+
+
+curl -X PUT http://127.0.0.1:8000/api/v1/projetos/2/ \
+     -H "Content-Type: application/json" \
+     -d '{
+           "nome": "Dashboard de Risco Atualizado",
+           "descricao": "Nova descrição",
+           "departamento": 3,
+           "data_inicio": "2024-05-15",
+           "data_fim": "2024-11-30",
+           "status": "Em Execução",
+           "risco": "Alto",
+           "orcamento": "75000.00",
+           "tecnologias": [2, 3]
+         }'
+
+
+curl -X DELETE http://127.0.0.1:8000/api/v1/departamentos/1/
+
+curl -X DELETE http://127.0.0.1:8000/api/v1/tecnologias/1/
+
+curl -X DELETE http://127.0.0.1:8000/api/v1/projetos/1/
+
+
+curl -X GET http://127.0.0.1:8000/api/v1/projetos/
+
+curl -X GET http://127.0.0.1:8000/api/v1/departamentos/
+
+curl -X GET http://127.0.0.1:8000/api/v1/tecnologias/
