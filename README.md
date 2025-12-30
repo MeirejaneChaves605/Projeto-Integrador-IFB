@@ -146,8 +146,8 @@ Pré-requisitos
  * Virtualenv (recomendado)
 Passo a Passo
  * Clone o repositório:
-   git clone https://github.com/seu-usuario/innovabank-api.git
-cd innovabank-api
+   git clone https://github.com/MeirejaneChaves605/Projeto-Integrador-IFB.git
+cd innova-api
 
  * Crie e ative o ambiente virtual:
    python -m venv venv
