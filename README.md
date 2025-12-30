@@ -413,8 +413,32 @@ Instituições financeiras frequentemente sofrem com a "Shadow IT" e a fragmenta
 | DRF Spectacular | Latest | Geração de documentação Swagger UI. |
 | CORS Headers | Latest | Permite integração entre domínios (Frontend/Backend). |
 
+🏗️ Estrutura do Projeto
+O projeto é dividido entre uma API RESTful e um cliente web estático.
+```text
+🔙 Backend
+backend/
+├── innova_api/ # Configurações do projeto Django
+├── portfolio/ # Aplicação de negócios
+│ ├── management/ # Comandos customizados (importaCSV.py)
+│ ├── data/ # CSVs para importação inicial
+│ ├── models.py # Tabelas (Projeto, Departamento, Tecnologia)
+│ ├── serializers.py # Lógica de conversão JSON
+│ ├── urls.py # Endpoints da API v1
+│ └── views.py # Lógica de processamento
+├── db.sqlite3 # Banco de dados local
+└── requirements.txt # Dependências Python
 
+```
+```text
+🎨 Frontend
+frontend/
+├── index.html # Interface de usuário (Dashboard)
+├── style.css # Estilização e responsividade
+├── script.js # Lógica de consumo da API e Auth
+└── src/imagens/ # Assets visuais (Logo e background)
 
+```
 
 # Documentação da API
 A documentação interativa está disponível em /api/v1/schema/swagger-ui/.
@@ -459,34 +483,6 @@ Funcionalidades de Alto Nível
  * Importação em Lote: Script customizado (importaCSV) para carga inicial de dados.
  * Exportação CSV: Endpoints para extração de dados de departamentos e tecnologias.
  * Segurança JWT: Autenticação protegida para operações de escrita.
-Estrutura do Projeto
-## 🏗️ Estrutura do Projeto
-
-```text
-innova_api_root/
-├── core/
-│   ├── __init__.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-├── portfolio/
-│   ├── management/
-│   │   └── commands/
-│   ├── migrations/
-│   ├── __init__.py
-│   ├── models.py
-│   ├── views.py
-│   ├── serializers.py
-│   ├── admin.py
-│   └── urls.py
-├── frontend/
-├── static/
-├── .gitignore
-├── README.md
-├── requirements.txt
-├── manage.py
-└── db.sqlite3
-```
 
 # Diagrama de Banco de Dados
 Abaixo está a representação visual do modelo de dados implementado no models.py:
