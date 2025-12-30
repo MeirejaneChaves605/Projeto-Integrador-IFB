@@ -234,6 +234,7 @@ http://127.0.0.1:8000/api/v1/token/
 
 
 # 🏦 Innova_api - Gerenciador de Portfólio de TI
+
 O Innova_api é uma solução centralizada desenvolvida para a DigitalFlow Solutions. Trata-se de uma API moderna e segura projetada para gerenciar o portfólio de iniciativas de TI do banco, permitindo o controle de projetos, departamentos e tecnologias utilizadas em toda a organização.
 # 🛠️ Descrição do Software
 Este sistema foi construído para resolver a fragmentação de dados no banco. Ele permite que gestores controlem orçamentos, status de execução e riscos tecnológicos, enquanto fornece uma interface pública (interna) para consulta de dados via Dashboard ou ferramentas de BI.
@@ -364,10 +365,11 @@ API de Gestão de Portfólio com filtros avançados, autenticação JWT e docume
 4. Execute as migrações: `python manage.py migrate`
 5. Inicie o servidor: `python manage.py runserver`
 
-> Nota: Este projeto faz parte do desafio "Bolsa Futuro Digital" do Instituto Federal de Brasília (IFB).
+> Nota: Este projeto faz parte do desafio "Bolsa Futuro Digital" do Instituto Federal de Brasilia.
 
 
-🏦 Innova_api - Portfólio de Projetos de TI
+# 🏦 Innova_api - Gerenciador de Portfólio de TI
+
 # 📌 Sumário
  * Visão Geral
  * Problema que Resolve
@@ -391,7 +393,7 @@ Instituições financeiras frequentemente sofrem com a "Shadow IT" e a fragmenta
  * CTOs e Gestores de TI: Para visão macro do portfólio.
  * Auditores: Para verificação de conformidade tecnológica.
  * Desenvolvedores: Para consulta de padrões de tecnologias adotadas pela empresa.
-🛠️ Funcionalidades de Alto Nível
+# 🛠️ Funcionalidades de Alto Nível
  * CRUD de Projetos: Gestão completa com validação de datas e orçamentos.
  * Importação em Lote: Script customizado (importaCSV) para carga inicial de dados legados via terminal.
  * Exportação de Dados: Endpoints específicos para gerar relatórios em formato CSV de Departamentos e Tecnologias.
