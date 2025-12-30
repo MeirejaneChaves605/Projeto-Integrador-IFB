@@ -287,24 +287,29 @@ O banco de dados (SQLite em desenvolvimento) segue a seguinte estrutura:
  * Painel Admin: /admin/
  * Frontend de Monitoramento: Localizado na pasta /frontend/ (Acesse home.html via Live Server).
 
-innova_api_root/                # Pasta raiz do repositório
-├── core/                       # Pasta do projeto Django (antiga innova_api/)
+innova_api_root/
+├── core/
+│   ├── __init__.py
 │   ├── settings.py
 │   ├── urls.py
 │   └── wsgi.py
-├── portfolio/                  # App principal
+├── portfolio/
 │   ├── management/
+│   │   └── commands/
 │   ├── migrations/
+│   ├── __init__.py
 │   ├── models.py
-│   ├── serializers.py
 │   ├── views.py
-│   └── urls.py                 # Recomendado: separar rotas do app
-├── frontend/                   # Interface web
-├── static/                     # Arquivos estáticos
-├── .gitignore                  # Arquivos para o Git ignorar
-├── README.md                   # Documentação do projeto
-├── requirements.txt            # Lista de dependências
-└── manage.py 
+│   ├── serializers.py
+│   ├── admin.py
+│   └── urls.py
+├── frontend/
+├── static/
+├── .gitignore
+├── README.md
+├── requirements.txt
+├── manage.py
+└── db.sqlite3
 
 requirements.txt
 
@@ -315,14 +320,6 @@ django-filter
 drf-spectacular
 django-cors-headers
 
-requirements.txt
-
-django>=5.0,<5.2
-djangorestframework
-djangorestframework-simplejwt
-django-filter
-drf-spectacular
-django-cors-headers
 
 # Innova_api 🚀
 
