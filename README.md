@@ -381,15 +381,30 @@ Pacotes Utilizados
 | drf-spectacular | latest | Geração automática de documentação Swagger/OpenAPI |
 | django-cors-headers | latest | Permite a comunicação com o frontend separado |
 Estrutura do Projeto
-innova_api/
-├── innova_api/ # Configurações globais (settings, urls)
-├── portfolio/ # App principal de negócios
-│ ├── management/ # Comandos customizados (importaCSV)
-│ ├── models.py # Tabelas (Projeto, Departamento, Tecnologia)
-│ ├── serializers.py # Transformação de dados para JSON
-│ └── views.py # Lógica dos Endpoints
-├── frontend/ # Interface web (HTML/JS/CSS)
-├── static/ # Arquivos estáticos
+## Estrutura do Projeto
+
+```text
+innova_api_root/
+├── core/
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── portfolio/
+│   ├── management/
+│   │   └── commands/
+│   ├── migrations/
+│   ├── __init__.py
+│   ├── models.py
+│   ├── views.py
+│   ├── serializers.py
+│   ├── admin.py
+│   └── urls.py
+├── frontend/
+├── static/
+├── .gitignore
+├── README.md
+├── requirements.txt
 ├── manage.py
 └── db.sqlite3
 
@@ -440,14 +455,32 @@ Funcionalidades de Alto Nível
  * Exportação CSV: Endpoints para extração de dados de departamentos e tecnologias.
  * Segurança JWT: Autenticação protegida para operações de escrita.
 Estrutura do Projeto
-innova_api/
-├── innova_api/ # Configurações globais
-├── portfolio/ # App principal
-│ ├── management/ # Script de importação CSV
-│ ├── models.py # Projeto, Departamento, Tecnologia
-│ └── views.py # Lógica dos Endpoints
-├── frontend/ # Interface HTML/JS/CSS
-└── manage.py
+## Estrutura do Projeto
+
+```text
+innova_api_root/
+├── core/
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── portfolio/
+│   ├── management/
+│   │   └── commands/
+│   ├── migrations/
+│   ├── __init__.py
+│   ├── models.py
+│   ├── views.py
+│   ├── serializers.py
+│   ├── admin.py
+│   └── urls.py
+├── frontend/
+├── static/
+├── .gitignore
+├── README.md
+├── requirements.txt
+├── manage.py
+└── db.sqlite3
 
 Diagrama de Banco de Dados
 Abaixo está a representação visual do modelo de dados implementado no models.py:
