@@ -365,7 +365,7 @@ API de Gestão de Portfólio com filtros avançados, autenticação JWT e docume
 4. Execute as migrações: `python manage.py migrate`
 5. Inicie o servidor: `python manage.py runserver`
 
-> Nota: Este projeto faz parte do desafio "Bolsa Futuro Digital" do Instituto Federal de Brasilia.
+> Nota: Este projeto faz parte do desafio "Bolsa Futuro Digital" do Instituto Federal de Brasília (IFB).
 
 
 # 🏦 Innova_api - Gerenciador de Portfólio de TI
@@ -555,7 +555,7 @@ erDiagram
 | POST | /api/v1/token/ | Obtém token JWT (Login) | Livre |
 | POST | /api/v1/projetos/ | Cria novo projeto | Token JWT |
 | GET | /api/v1/departamentos/ | Lista departamentos | Livre |
-Configuração do Ambiente
+# Configuração do Ambiente
  * Instalação:
    git clone https://github.com/MeirejaneChaves605/Projeto-Integrador-IFB.git
 python -m venv venv
@@ -568,6 +568,30 @@ python manage.py importaCSV
 
  * Execução:
    python manage.py runserver
+
+  #  📊 Diagrama de Banco de Dados
+erDiagram
+    DEPARTAMENTO ||--o{ PROJETO : "possui"
+    PROJETO }o--o{ TECNOLOGIA : "utiliza"
+
+# 📖 Documentação da API
+# A API utiliza o padrão OpenAPI 3.0. Com o servidor rodando, acesse:
+ * Swagger UI: http://127.0.0.1:8000/api/schema/swagger-ui/
+ * Admin Django: http://127.0.0.1:8000/admin/
+⚙️ Configuração do Ambiente
+ * Clone o repositório:
+   git clone https://github.com/seu-usuario/innovabank.git
+
+ * Configure o Backend:
+   python -m venv venv
+source venv/bin/activate # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py importaCSV
+python manage.py runserver
+
+ * Acesse o Frontend:
+   Basta abrir o arquivo frontend/index.html em qualquer navegador moderno ou pelo o Live Server
 
 * Desenvolvido por: Ester Luiza Souza Campos, Meirejane Figueredo Chaves e Naylanne Lissa Gomes Cunha
 * Orientador: Henrique Freitas (IFB)
