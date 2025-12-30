@@ -315,6 +315,12 @@ django-filter
 drf-spectacular
 django-cors-headers
 
+innova_api_root/ # Pasta raiz do repositório ├── core/ # Pasta do projeto Django (antiga innova_api/) │ ├── settings.py │ ├── urls.py │ └── wsgi.py ├── portfolio/ # App principal │ ├── management/ │ ├── migrations/ │ ├── models.py │ ├── serializers.py │ ├── views.py │ └── urls.py # Recomendado: separar rotas do app ├── frontend/ # Interface web ├── static/ # Arquivos estáticos ├── .gitignore # Arquivos para o Git ignorar ├── README.md # Documentação do projeto ├── requirements.txt # Lista de dependências └── manage.py
+
+requirements.txt
+
+django>=5.0,<6.0 djangorestframework djangorestframework-simplejwt django-filter drf-spectacular django-cors-headers
+
 # Innova_api 🚀
 
 API de Gestão de Portfólio com filtros avançados, autenticação JWT e documentação automática.
