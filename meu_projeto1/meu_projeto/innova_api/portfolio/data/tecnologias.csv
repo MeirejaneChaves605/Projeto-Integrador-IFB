@@ -1,0 +1,6 @@
+nome,tipo,versao,fornecedor
+Python,Linguagem,3.11,PSF
+Django,Framework,4.2,Django Software Foundation
+AWS Lambda,Serviço Cloud,N/A,Amazon
+PostgreSQL,Banco de Dados,15,PostgreSQL Global Development Group
+Angular,Framework,16,Google
