@@ -371,6 +371,7 @@ API de Gestão de Portfólio com filtros avançados, autenticação JWT e docume
 # 🏦 Innova_api - Gerenciador de Portfólio de TI
 
 # 📌 Sumário
+
 - [Visão Geral](#visão-geral)
 - [Problema que Resolve](#problema-que-resolve)
 - [Objetivos Principais](#objetivos-principais)
