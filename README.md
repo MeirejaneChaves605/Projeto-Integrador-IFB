@@ -287,3 +287,85 @@ O que eu fiz de diferente para você:
  * Endpoints Reais: Ajustei os caminhos para usarem o prefixo /api/v1/ que está no seu urls.py.
  * Comando Customizado: Destaquei o importaCSV, que é um diferencial do projeto.
 
+InnovaBank API - Gestão de Portfólio de TI
+Instituições de Fomento e Parceria
+Orientador
+Visão Geral
+A InnovaBank API é uma solução de backend RESTful desenvolvida para a centralização e governança do portfólio de projetos de TI do banco. O sistema permite o monitoramento de ciclos de vida de software, controle orçamentário e mapeamento de dependências tecnológicas.
+Funcionalidades de Alto Nível
+ * CRUD de Projetos: Gestão com controle de status e análise de risco.
+ * Importação em Lote: Script customizado (importaCSV) para carga inicial de dados.
+ * Exportação CSV: Endpoints para extração de dados de departamentos e tecnologias.
+ * Segurança JWT: Autenticação protegida para operações de escrita.
+Estrutura do Projeto
+innova_api/
+├── innova_api/ # Configurações globais
+├── portfolio/ # App principal
+│ ├── management/ # Script de importação CSV
+│ ├── models.py # Projeto, Departamento, Tecnologia
+│ └── views.py # Lógica dos Endpoints
+├── frontend/ # Interface HTML/JS/CSS
+└── manage.py
+
+Diagrama de Banco de Dados
+Abaixo está a representação visual do modelo de dados implementado no models.py:
+erDiagram
+    DEPARTAMENTO ||--o{ PROJETO : "possui"
+    PROJETO }o--o{ TECNOLOGIA : "utiliza"
+
+    DEPARTAMENTO {
+        int id
+        string nome
+        string gestor
+        text descricao
+        boolean ativo
+        datetime data_criacao
+    }
+
+    PROJETO {
+        int id
+        string nome
+        text descricao
+        date data_inicio
+        date data_fim
+        string status
+        string risco
+        decimal orcamento
+        datetime data_criacao
+    }
+
+    TECNOLOGIA {
+        int id
+        string nome
+        string tipo
+        string versao
+        string fornecedor
+        text descricao
+    }
+
+> Descrição: O sistema utiliza uma relação de 1:N entre Departamentos e Projetos, e uma relação N:N (Many-to-Many) entre Projetos e Tecnologias para rastrear a stack técnica de cada iniciativa.
+> 
+Documentação da API
+| Método | Endpoint | Descrição | Autenticação |
+|---|---|---|---|
+| GET | /api/v1/projetos/ | Lista projetos de TI | Livre |
+| POST | /api/v1/token/ | Obtém token JWT (Login) | Livre |
+| POST | /api/v1/projetos/ | Cria novo projeto | Token JWT |
+| GET | /api/v1/departamentos/ | Lista departamentos | Livre |
+Configuração do Ambiente
+ * Instalação:
+   git clone https://github.com/SeuUsuario/InnovaBank.git
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+ * Carga de Dados:
+   python manage.py migrate
+python manage.py importaCSV
+
+ * Execução:
+   python manage.py runserver
+
+Desenvolvido por: [Seu Nome]
+Orientador: Henrique Freitas (IFB)
+
