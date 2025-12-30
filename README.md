@@ -103,6 +103,23 @@ para o banco de grande porte **InnovaBank**, que precisava de um sistema moderno
 
 ---
 
+# API do Projeto
+
+[![Python](https://img.shields.io/badge/Python-3.13.5%2B-blue.svg?logo=python)](https://www.python.org/downloads/)
+[![Django](https://img.shields.io/badge/Django-5.0%2B-green.svg?logo=Django)](https://www.djangoproject.com/)
+[![SQLite](https://img.shields.io/badge/SQLite-003B57.svg?logo=sqlite&logoColor=white)](https://www.sqlite.org/)
+
+## Parcerias e instituições
+[![Website IFB](https://img.shields.io/badge/Website-IFB-%23508C3C.svg?labelColor=%23C8102E)](https://www.ifb.edu.br/) 
+[![Website ihwbr](https://img.shields.io/badge/Website-ihwbr-%23DAA520.svg?labelColor=%232E2E2E)](https://hardware.org.br/)
+
+## Orientador (Professor)
+
+[![LinkedIn Henrique Pereira](https://img.shields.io/badge/LinkedIn-Henrique_Freitas-%230077B5.svg?labelColor=%23FFFFFF&logo=linkedin)](https://br.linkedin.com/in/henrique-freitas-69b836b4)
+[![GitHub Henrique](https://img.shields.io/badge/GitHub-henriquepff_(Henrique_Freitas)-%23181717.svg?logo=github&logoColor=white)](https://github.com/henriquepff/)
+[![Lattes Henrique Pereira](https://img.shields.io/badge/Lattes-Henrique_Freitas-green.svg?logo=cnpq&logoColor=white)](https://buscatextual.cnpq.br/buscatextual/visualizacv.do;jsessionid=8B62CFB2D86DC88AE42BDFC0BF85BBBE.buscatextual_0)
+
+
 ## Banco de Dados Conceitual e Logico
 
 <img width="988" height="322" alt="image" src="https://github.com/user-attachments/assets/7bf2a247-efe7-4656-ac5d-f9186a107b14" />
