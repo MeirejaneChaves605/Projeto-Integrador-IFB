@@ -287,6 +287,7 @@ O banco de dados (SQLite em desenvolvimento) segue a seguinte estrutura:
  * Painel Admin: /admin/
  * Frontend de Monitoramento: Localizado na pasta /frontend/ (Acesse home.html via Live Server).
 
+```text
 innova_api_root/
 ├── core/
 │   ├── __init__.py
@@ -310,16 +311,18 @@ innova_api_root/
 ├── requirements.txt
 ├── manage.py
 └── db.sqlite3
+```
 
-requirements.txt
+# requirements.txt
 
+```text
 django>=5.0,<6.0
 djangorestframework
 djangorestframework-simplejwt
 django-filter
 drf-spectacular
 django-cors-headers
-
+```
 
 # Innova_api 🚀
 
