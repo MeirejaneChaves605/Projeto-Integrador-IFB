@@ -129,7 +129,7 @@ http://127.0.0.1:8000/api/v1/token/
 
 
 🏦 Innova_api - Gerenciador de Portfólio de TI
-O InnovaBank é uma solução centralizada desenvolvida para a DigitalFlow Solutions. Trata-se de uma API moderna e segura projetada para gerenciar o portfólio de iniciativas de TI do banco, permitindo o controle de projetos, departamentos e tecnologias utilizadas em toda a organização.
+O Innova_api é uma solução centralizada desenvolvida para a DigitalFlow Solutions. Trata-se de uma API moderna e segura projetada para gerenciar o portfólio de iniciativas de TI do banco, permitindo o controle de projetos, departamentos e tecnologias utilizadas em toda a organização.
 🛠️ Descrição do Software
 Este sistema foi construído para resolver a fragmentação de dados no banco. Ele permite que gestores controlem orçamentos, status de execução e riscos tecnológicos, enquanto fornece uma interface pública (interna) para consulta de dados via Dashboard ou ferramentas de BI.
 Principais Funcionalidades:
@@ -199,17 +199,7 @@ O banco de dados (SQLite em desenvolvimento) segue a seguinte estrutura:
 
 Innova_api - Gestão de Portfólio de TI
 Instituições de Fomento e Parceria
-Orientador
-Sumário
- * Visão Geral
- * Problema que Resolve
- * Objetivos Principais
- * Público-Alvo
- * Funcionalidades de Alto Nível
- * Pacotes Utilizados
- * Estrutura do Projeto
- * Documentação da API
- * Configuração do Ambiente
+Orientador e destaca-se:
 Visão Geral
 A InnovaBank API é uma solução robusta de backend desenvolvida para a centralização e governança do portfólio de projetos de TI do banco. O sistema permite o monitoramento de ciclos de vida de software, controle orçamentário e mapeamento de dependências tecnológicas, servindo como fonte de dados para dashboards executivos e auditorias de infraestrutura.
 Problema que Resolve
@@ -287,11 +277,11 @@ O que eu fiz de diferente para você:
  * Endpoints Reais: Ajustei os caminhos para usarem o prefixo /api/v1/ que está no seu urls.py.
  * Comando Customizado: Destaquei o importaCSV, que é um diferencial do projeto.
 
-InnovaBank API - Gestão de Portfólio de TI
+Innova_api - Gestão de Portfólio de TI
 Instituições de Fomento e Parceria
 Orientador
 Visão Geral
-A InnovaBank API é uma solução de backend RESTful desenvolvida para a centralização e governança do portfólio de projetos de TI do banco. O sistema permite o monitoramento de ciclos de vida de software, controle orçamentário e mapeamento de dependências tecnológicas.
+A Innova_api é uma solução de backend RESTful desenvolvida para a centralização e governança do portfólio de projetos de TI do banco. O sistema permite o monitoramento de ciclos de vida de software, controle orçamentário e mapeamento de dependências tecnológicas.
 Funcionalidades de Alto Nível
  * CRUD de Projetos: Gestão com controle de status e análise de risco.
  * Importação em Lote: Script customizado (importaCSV) para carga inicial de dados.
