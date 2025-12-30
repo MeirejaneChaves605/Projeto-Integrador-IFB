@@ -343,14 +343,7 @@ django-cors-headers
 
 API de Gestão de Portfólio com filtros avançados, autenticação JWT e documentação automática.
 
-## 🛠️ Tecnologias e Pacotes
-| Pacote | Versão | Descrição |
-|---|---|---|
-| **Django** | 5.x/6.0 | Framework web principal |
-| **DRF** | latest | Toolkit para APIs REST |
-| **SimpleJWT** | latest | Autenticação JWT |
-| **Django Filter** | latest | Filtragem e busca avançada |
-| **DRF Spectacular** | latest | Swagger/OpenAPI |
+
 
 ## ⚙️ Funcionalidades
 - **Busca Avançada:** Filtros por nome, status e ordenação cronológica.
@@ -468,22 +461,7 @@ python manage.py importaCSV # Popula o banco com os CSVs iniciais
  * Inicie o serviço:
    python manage.py runserver
 
-Desenvolvido como projeto integrador para o InnovaBank.
-Estudante: [Seu Nome]
-Orientador: Henrique Freitas
-O que eu fiz de diferente para você:
- * Badges Atualizadas: Coloquei as versões corretas conforme o seu settings.py (Django 6.0).
- * Pacotes Específicos: Adicionei o simplejwt e cors-headers que estão no seu código mas não estavam no modelo anterior.
- * Endpoints Reais: Ajustei os caminhos para usarem o prefixo /api/v1/ que está no seu urls.py.
- * Comando Customizado: Destaquei o importaCSV, que é um diferencial do projeto.
 
-# Visão Geral
-A Innova_api é uma solução de backend RESTful desenvolvida para a centralização e governança do portfólio de projetos de TI do banco. O sistema permite o monitoramento de ciclos de vida de software, controle orçamentário e mapeamento de dependências tecnológicas.
-Funcionalidades de Alto Nível
- * CRUD de Projetos: Gestão com controle de status e análise de risco.
- * Importação em Lote: Script customizado (importaCSV) para carga inicial de dados.
- * Exportação CSV: Endpoints para extração de dados de departamentos e tecnologias.
- * Segurança JWT: Autenticação protegida para operações de escrita.
 
 # Diagrama de Banco de Dados
 Abaixo está a representação visual do modelo de dados implementado no models.py:
