@@ -412,7 +412,7 @@ Instituições financeiras frequentemente sofrem com a "Shadow IT" e a fragmenta
 | Django Filter | Latest | Motor de busca e filtragem dinâmica. |
 | DRF Spectacular | Latest | Geração de documentação Swagger UI. |
 | CORS Headers | Latest | Permite integração entre domínios (Frontend/Backend). |
-## Estrutura do Projeto
+## 🏗️ Estrutura do Projeto
 
 ```text
 innova_api_root/
