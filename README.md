@@ -253,8 +253,8 @@ Endpoints Principais
 | GET | /api/v1/tecnologias/ | Lista stack tecnológica permitida | Livre |
 Configuração do Ambiente
  * Clone e entre na pasta:
-   git clone https://github.com/SeuUsuario/InnovaBank.git
-cd InnovaBank
+   git clone https://github.com/MeirejaneChaves605/Projeto-Integrador-IFB.git
+cd Innova_api
 
  * Crie o ambiente virtual e instale as dependências:
    python -m venv venv
