@@ -438,7 +438,7 @@ innova_api_root/
 └── db.sqlite3
 ```
 
-Documentação da API
+# Documentação da API
 A documentação interativa está disponível em /api/v1/schema/swagger-ui/.
 Endpoints Principais
 | Método | Endpoint | Descrição | Autenticação |
@@ -474,10 +474,7 @@ O que eu fiz de diferente para você:
  * Endpoints Reais: Ajustei os caminhos para usarem o prefixo /api/v1/ que está no seu urls.py.
  * Comando Customizado: Destaquei o importaCSV, que é um diferencial do projeto.
 
-Innova_api - Gestão de Portfólio de TI
-Instituições de Fomento e Parceria
-Orientador
-Visão Geral
+# Visão Geral
 A Innova_api é uma solução de backend RESTful desenvolvida para a centralização e governança do portfólio de projetos de TI do banco. O sistema permite o monitoramento de ciclos de vida de software, controle orçamentário e mapeamento de dependências tecnológicas.
 Funcionalidades de Alto Nível
  * CRUD de Projetos: Gestão com controle de status e análise de risco.
@@ -513,13 +510,13 @@ innova_api_root/
 └── db.sqlite3
 ```
 
-Diagrama de Banco de Dados
+# Diagrama de Banco de Dados
 Abaixo está a representação visual do modelo de dados implementado no models.py:
 erDiagram
     DEPARTAMENTO ||--o{ PROJETO : "possui"
     PROJETO }o--o{ TECNOLOGIA : "utiliza"
 
-    DEPARTAMENTO {
+  #  DEPARTAMENTO {
         int id
         string nome
         string gestor
@@ -528,7 +525,7 @@ erDiagram
         datetime data_criacao
     }
 
-    PROJETO {
+   # PROJETO {
         int id
         string nome
         text descricao
@@ -540,7 +537,7 @@ erDiagram
         datetime data_criacao
     }
 
-    TECNOLOGIA {
+   # TECNOLOGIA {
         int id
         string nome
         string tipo
@@ -551,7 +548,7 @@ erDiagram
 
 > Descrição: O sistema utiliza uma relação de 1:N entre Departamentos e Projetos, e uma relação N:N (Many-to-Many) entre Projetos e Tecnologias para rastrear a stack técnica de cada iniciativa.
 > 
-Documentação da API
+# Documentação da API
 | Método | Endpoint | Descrição | Autenticação |
 |---|---|---|---|
 | GET | /api/v1/projetos/ | Lista projetos de TI | Livre |
