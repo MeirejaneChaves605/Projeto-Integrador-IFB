@@ -390,7 +390,7 @@ Instituições financeiras frequentemente sofrem com a "Shadow IT" e a fragmenta
  * Gestão de Risco e Status: Monitorar o progresso das entregas e o nível de criticidade (Baixo a Crítico).
  * Transparência Orçamentária: Controlar os custos alocados a cada departamento.
  * Interoperabilidade: Fornecer dados via JSON para o frontend de monitoramento em tempo real.
-# 👥 Público-Alvo
+# 👥 Público Alvo
  * CTOs e Gestores de TI: Para visão macro do portfólio.
  * Auditores: Para verificação de conformidade tecnológica.
  * Desenvolvedores: Para consulta de padrões de tecnologias adotadas pela empresa.
@@ -402,6 +402,7 @@ Instituições financeiras frequentemente sofrem com a "Shadow IT" e a fragmenta
  * Filtros Avançados: Busca por nome, status e ordenação cronológica diretamente via parâmetros de URL.
    
 # 📦 Pacotes Utilizados
+
 | Pacote | Versão | Descrição |
 |---|---|---|
 | django | 6.0 | Framework web principal |
