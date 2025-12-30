@@ -435,7 +435,7 @@ Documentação da API
 | GET | /api/v1/departamentos/ | Lista departamentos | Livre |
 Configuração do Ambiente
  * Instalação:
-   git clone https://github.com/SeuUsuario/InnovaBank.git
+   git clone https://github.com/MeirejaneChaves605/Projeto-Integrador-IFB.git
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
