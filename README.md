@@ -286,6 +286,61 @@ O banco de dados (SQLite em desenvolvimento) segue a seguinte estrutura:
 🔗 Links e Recursos
  * Painel Admin: /admin/
  * Frontend de Monitoramento: Localizado na pasta /frontend/ (Acesse home.html via Live Server).
+
+innova_api_root/                # Pasta raiz do repositório
+├── core/                       # Pasta do projeto Django (antiga innova_api/)
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── portfolio/                  # App principal
+│   ├── management/
+│   ├── migrations/
+│   ├── models.py
+│   ├── serializers.py
+│   ├── views.py
+│   └── urls.py                 # Recomendado: separar rotas do app
+├── frontend/                   # Interface web
+├── static/                     # Arquivos estáticos
+├── .gitignore                  # Arquivos para o Git ignorar
+├── README.md                   # Documentação do projeto
+├── requirements.txt            # Lista de dependências
+└── manage.py 
+
+requirements.txt
+
+django>=5.0,<6.0
+djangorestframework
+djangorestframework-simplejwt
+django-filter
+drf-spectacular
+django-cors-headers
+
+# Innova_api 🚀
+
+API de Gestão de Portfólio com filtros avançados, autenticação JWT e documentação automática.
+
+## 🛠️ Tecnologias e Pacotes
+| Pacote | Versão | Descrição |
+|---|---|---|
+| **Django** | 5.x/6.0 | Framework web principal |
+| **DRF** | latest | Toolkit para APIs REST |
+| **SimpleJWT** | latest | Autenticação JWT |
+| **Django Filter** | latest | Filtragem e busca avançada |
+| **DRF Spectacular** | latest | Swagger/OpenAPI |
+
+## ⚙️ Funcionalidades
+- **Busca Avançada:** Filtros por nome, status e ordenação cronológica.
+- **Gestão:** CRUD de Projetos, Departamentos e Tecnologias.
+- **Docs:** Documentação interativa via Swagger.
+- **Segurança:** Proteção de endpoints via JWT e suporte a CORS.
+
+## 🚀 Como Executar
+1. Clone o repositório: `git clone <url-do-repo>`
+2. Crie um ambiente virtual: `python -m venv venv`
+3. Ative o venv e instale as dependências: `pip install -r requirements.txt`
+4. Execute as migrações: `python manage.py migrate`
+5. Inicie o servidor: `python manage.py runserver`
+
 > Nota: Este projeto faz parte do desafio "Bolsa Futuro Digital" do Instituto Federal de Brasília (IFB).
 
 Innova_api - Gestão de Portfólio de TI
