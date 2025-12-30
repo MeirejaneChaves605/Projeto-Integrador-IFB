@@ -378,7 +378,7 @@ API de Gestão de Portfólio com filtros avançados, autenticação JWT e docume
 - [Configuração do Ambiente](#configuração-do-ambiente)
 
 #  Visão Geral
-A InnovaBank API é uma solução robusta de backend desenvolvida para a centralização e governança do portfólio de projetos de TI do banco. O sistema permite o monitoramento de ciclos de vida de software, controle orçamentário e mapeamento de dependências tecnológicas, servindo como fonte de dados para dashboards executivos e auditorias de infraestrutura.
+A Innova_api é uma solução robusta de backend desenvolvida para a centralização e governança do portfólio de projetos de TI do banco. O sistema permite o monitoramento de ciclos de vida de software, controle orçamentário e mapeamento de dependências tecnológicas, servindo como fonte de dados para dashboards executivos e auditorias de infraestrutura.
 #  Problema que Resolve
 Instituições financeiras frequentemente sofrem com a "Shadow IT" e a fragmentação de informações sobre projetos em andamento. A API resolve a falta de visibilidade sobre quais tecnologias estão sendo adotadas, o risco associado a cada iniciativa e a alocação orçamentária por departamento, substituindo planilhas manuais por um banco de dados relacional íntegro.
 #  Objetivos Principais
