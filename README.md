@@ -404,16 +404,14 @@ Instituições financeiras frequentemente sofrem com a "Shadow IT" e a fragmenta
  * Filtros Avançados: Busca por nome, status e ordenação cronológica diretamente via parâmetros de URL.
    
 # 📦 Pacotes Utilizados
-
 | Pacote | Versão | Descrição |
 |---|---|---|
-| django | 6.0 | Framework web principal |
-| djangorestframework | latest | Toolkit para construção de APIs REST |
-| djangorestframework-simplejwt | latest | Autenticação baseada em JSON Web Token |
-| django-filter | latest | Filtragem de projetos por status e busca |
-| drf-spectacular | latest | Geração automática de documentação Swagger/OpenAPI |
-| django-cors-headers | latest | Permite a comunicação com o frontend separado |
-Estrutura do Projeto
+| Django | 6.0 | Framework Web principal. |
+| Django REST Framework | Latest | Toolkit para construção da API. |
+| Simple JWT | Latest | Autenticação segura via tokens. |
+| Django Filter | Latest | Motor de busca e filtragem dinâmica. |
+| DRF Spectacular | Latest | Geração de documentação Swagger UI. |
+| CORS Headers | Latest | Permite integração entre domínios (Frontend/Backend). |
 ## Estrutura do Projeto
 
 ```text
