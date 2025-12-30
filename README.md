@@ -2,6 +2,95 @@
 
 # Este projeto é o seguinte: 
 
+<img align="center" width="800px" style="margin-top:-20px" src="https://github.com/MeirejaneChaves605/ExerciciosAulaPythonIFB/blob/main/imagem/Imagem1.jpg?raw=true.png">
+
+# Projeto Integrador
+
+# Contexto de Negócio
+
+* Você foi contratado como desenvolvedor backend pela DigitalFlow
+Solutions, uma empresa de tecnologia especializada em criar plataformas
+corporativas para grandes organizações. O novo cliente da DigitalFlow é a
+InnovaBank, um banco de grande porte que está passando por uma
+transformação digital e precisa de um sistema moderno para gerenciar seu
+portfólio interno de projetos de TI.
+* Hoje, o banco possui dezenas de iniciativas simultâneas, distribuídas
+entre vários departamentos (TI, Segurança, Dados, Infraestrutura, CRM etc.).
+Cada projeto utiliza diversas tecnologias como Python, Java, Angular,
+PostgreSQL e outras. A diretoria quer uma API centralizada, segura e
+documentada para alimentar dashboards estratégicos, integrar com outros
+sistemas e permitir o gerenciamento interno. Você fará parte da equipe que
+entregará essa API.
+* A solução será implantada dentro da área de Gestão de Portfólio (PMO
+de Tecnologia) do InnovaBank. A área precisa:
+• Consultar publicamente (de forma interna ao banco) todos os projetos
+em andamento e concluídos;
+• Permitir que apenas gestores autorizados possam registrar novos
+projetos, atualizar status, encerrar, editar orçamento e excluir registros
+obsoletos;
+• Gerenciar de forma consistente as tecnologias utilizadas em cada
+projeto, permitindo análise de padrões tecnológicos do banco;
+• Saber quais tecnologias são mais utilizadas, comparar departamentos e
+controlar riscos tecnológicos.
+* Essa API será consumida por: painéis internos do banco (PowerBI,
+Tableau), aplicações internas de gestão, ferramentas de auditoria e
+ferramentas de governança de TI. Por isso, qualidade, segurança e
+organização são requisitos obrigatórios.
+
+# Modelagem das Entidades e Colunas
+
+* A API deverá gerenciar três entidades essenciais para a governança do
+banco:
+• Departamento: Representa áreas internas responsáveis por projetos de
+TI. Colunas da tabela: id, nome, gestor, descrição, ativo (indica se está
+ativo) e data de criação (registro automático);
+• Projeto: Cada iniciativa de TI em execução ou concluída. Colunas da
+tabela: id, nome, descrição, departamento responsável, data de início,
+data do fim e status (“Planejado”, “Em Execução”, “Concluído” e
+“Cancelado”);
+• Tecnologia: Todas as tecnologias oficialmente usadas em projetos do
+banco. Colunas da tabela: id, nome (Ex: “Python”, “Angular”, “AWS
+Lambda”), tipo (Linguagem, Framework, Serviço Cloud etc.), versão,
+fornecedor (Ex: Oracle, Amazon, Google, Red Hat) e descrição.
+Um projeto está vinculado a um departamento e um departamento pode
+ter vários projetos. Uma tecnologia pode ser utilizada em vários projetos e um
+projeto pode utilizar várias tecnologias.
+
+# Regras de Acesso e Filtros
+
+* Seguindo as políticas do InnovaBank:
+• GET – Acesso liberado (sem autenticação): Todos podem visualizar
+informações, pois são dados internos de consulta geral:
+◦ /departamentos/
+◦ /projetos/
+◦ /tecnologias/
+• POST, PUT, DELETE – Acesso restrito (com autenticação): Somente
+usuários autenticados e autorizados (gestores, PMO, TI) podem alterar
+dados, como por exemplo:
+◦ Criar novo projeto;
+◦ Alterar status ou orçamento;
+◦ Registrar nova tecnologia;
+◦ Encerrar departamento inativo.
+* O PMO precisa de filtros para análises rápidas, como por exemplo:
+• Projetos por departamento;
+• Projetos com risco “Alto”;
+• Projetos iniciados entre duas datas;
+• Projetos que utilizam determinada tecnologia;
+• Tecnologias por tipo (linguagens, frameworks etc.);
+• Departamentos ativos/inativos.
+* Esses filtros serão usados por ferramentas de BI e auditoria interna.
+
+# Entrega do Projeto
+
+* Deve ser entregue o repositório GitHub com o código completo do projeto e o
+README com os seguintes tópicos:
+• Descrição do Software;
+• Instalação e Configuração (passo a passo para instalação e
+configuração do sofware);
+• Documentação da API (recomendado usar Swagger);
+• Modelo Lógico do Banco de dados (Modelo Relacional);
+• Link da Publicação da Aplicação (opcional, mas recomendado).
+
 Projeto Integrador realizado por:  
 **Ester Luiza Souza Campos, Meirejane Figueredo Chaves e Naylanne Lissa Gomes Cunha**  
 Curso **Backend - Python com Django** no **IFB/Riacho Fundo**
