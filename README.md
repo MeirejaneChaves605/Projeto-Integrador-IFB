@@ -196,3 +196,94 @@ O banco de dados (SQLite em desenvolvimento) segue a seguinte estrutura:
  * Painel Admin: /admin/
  * Frontend de Monitoramento: Localizado na pasta /frontend/ (Acesse home.html via Live Server).
 > Nota: Este projeto faz parte do desafio "Bolsa Futuro Digital" do Instituto Federal de Brasília (IFB).
+
+Innova_api - Gestão de Portfólio de TI
+Instituições de Fomento e Parceria
+Orientador
+Sumário
+ * Visão Geral
+ * Problema que Resolve
+ * Objetivos Principais
+ * Público-Alvo
+ * Funcionalidades de Alto Nível
+ * Pacotes Utilizados
+ * Estrutura do Projeto
+ * Documentação da API
+ * Configuração do Ambiente
+Visão Geral
+A InnovaBank API é uma solução robusta de backend desenvolvida para a centralização e governança do portfólio de projetos de TI do banco. O sistema permite o monitoramento de ciclos de vida de software, controle orçamentário e mapeamento de dependências tecnológicas, servindo como fonte de dados para dashboards executivos e auditorias de infraestrutura.
+Problema que Resolve
+Instituições financeiras frequentemente sofrem com a "Shadow IT" e a fragmentação de informações sobre projetos em andamento. A API resolve a falta de visibilidade sobre quais tecnologias estão sendo adotadas, o risco associado a cada iniciativa e a alocação orçamentária por departamento, substituindo planilhas manuais por um banco de dados relacional íntegro.
+Objetivos Principais
+ * Centralização Tecnológica: Mapear quais frameworks e linguagens são usados em cada projeto.
+ * Gestão de Risco e Status: Monitorar o progresso das entregas e o nível de criticidade (Baixo a Crítico).
+ * Transparência Orçamentária: Controlar os custos de hardware e software alocados a cada departamento.
+ * Interoperabilidade: Fornecer dados via JSON para o frontend de monitoramento em tempo real.
+Público-Alvo
+ * CTOs e Gestores de TI: Para visão macro do portfólio.
+ * Auditores: Para verificação de conformidade tecnológica.
+ * Desenvolvedores: Para consulta de padrões de tecnologias adotadas pela empresa.
+Funcionalidades de Alto Nível
+ * CRUD de Projetos: Gestão completa com validação de datas e orçamentos.
+ * Importação em Lote: Script customizado (importaCSV) para carga inicial de dados legados.
+ * Exportação de Dados: Endpoints específicos para gerar relatórios em formato CSV.
+ * Segurança JWT: Autenticação via tokens para operações de escrita (POST, PUT, DELETE).
+ * Filtros Avançados: Busca por nome, status e ordenação cronológica via API.
+Pacotes Utilizados
+| Pacote | Versão | Descrição |
+|---|---|---|
+| django | 6.0 | Framework web principal |
+| djangorestframework | latest | Toolkit para construção de APIs REST |
+| djangorestframework-simplejwt | latest | Autenticação baseada em JSON Web Token |
+| django-filter | latest | Filtragem de projetos por status e busca |
+| drf-spectacular | latest | Geração automática de documentação Swagger/OpenAPI |
+| django-cors-headers | latest | Permite a comunicação com o frontend separado |
+Estrutura do Projeto
+innova_api/
+├── innova_api/ # Configurações globais (settings, urls)
+├── portfolio/ # App principal de negócios
+│ ├── management/ # Comandos customizados (importaCSV)
+│ ├── models.py # Tabelas (Projeto, Departamento, Tecnologia)
+│ ├── serializers.py # Transformação de dados para JSON
+│ └── views.py # Lógica dos Endpoints
+├── frontend/ # Interface web (HTML/JS/CSS)
+├── static/ # Arquivos estáticos
+├── manage.py
+└── db.sqlite3
+
+Documentação da API
+A documentação interativa está disponível em /api/v1/schema/swagger-ui/.
+Endpoints Principais
+| Método | Endpoint | Descrição | Autenticação |
+|---|---|---|---|
+| GET | /api/v1/projetos/ | Lista todos os projetos de TI | Livre |
+| POST | /api/v1/token/ | Obtém token JWT (Login) | Livre |
+| POST | /api/v1/projetos/ | Cria novo projeto | Token JWT |
+| GET | /api/v1/departamentos/ | Lista departamentos do banco | Livre |
+| GET | /api/v1/tecnologias/ | Lista stack tecnológica permitida | Livre |
+Configuração do Ambiente
+ * Clone e entre na pasta:
+   git clone https://github.com/SeuUsuario/InnovaBank.git
+cd InnovaBank
+
+ * Crie o ambiente virtual e instale as dependências:
+   python -m venv venv
+source venv/bin/activate # No Windows: venv\Scripts\activate
+pip install -r requirements.txt
+
+ * Migre o banco e importe os dados:
+   python manage.py migrate
+python manage.py importaCSV # Popula o banco com os CSVs iniciais
+
+ * Inicie o serviço:
+   python manage.py runserver
+
+Desenvolvido como projeto integrador para o InnovaBank.
+Estudante: [Seu Nome]
+Orientador: Henrique Freitas
+O que eu fiz de diferente para você:
+ * Badges Atualizadas: Coloquei as versões corretas conforme o seu settings.py (Django 6.0).
+ * Pacotes Específicos: Adicionei o simplejwt e cors-headers que estão no seu código mas não estavam no modelo anterior.
+ * Endpoints Reais: Ajustei os caminhos para usarem o prefixo /api/v1/ que está no seu urls.py.
+ * Comando Customizado: Destaquei o importaCSV, que é um diferencial do projeto.
+
