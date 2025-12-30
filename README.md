@@ -128,7 +128,7 @@ http://127.0.0.1:8000/api/v1/token/
 ### Para ter acesso ao visual personalizado da API instale a extensão Live Server no VS Code e abra o arquivo index.html com botão direito/Open with Live Server.
 
 
-🏦 InnovaBank - Gerenciador de Portfólio de TI
+🏦 Innova_api - Gerenciador de Portfólio de TI
 O InnovaBank é uma solução centralizada desenvolvida para a DigitalFlow Solutions. Trata-se de uma API moderna e segura projetada para gerenciar o portfólio de iniciativas de TI do banco, permitindo o controle de projetos, departamentos e tecnologias utilizadas em toda a organização.
 🛠️ Descrição do Software
 Este sistema foi construído para resolver a fragmentação de dados no banco. Ele permite que gestores controlem orçamentos, status de execução e riscos tecnológicos, enquanto fornece uma interface pública (interna) para consulta de dados via Dashboard ou ferramentas de BI.
@@ -147,7 +147,7 @@ Pré-requisitos
 Passo a Passo
  * Clone o repositório:
    git clone https://github.com/MeirejaneChaves605/Projeto-Integrador-IFB.git
-cd innova-api
+cd innova_api
 
  * Crie e ative o ambiente virtual:
    python -m venv venv
