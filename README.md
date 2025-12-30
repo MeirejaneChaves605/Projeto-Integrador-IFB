@@ -366,7 +366,8 @@ API de Gestão de Portfólio com filtros avançados, autenticação JWT e docume
 
 > Nota: Este projeto faz parte do desafio "Bolsa Futuro Digital" do Instituto Federal de Brasília (IFB).
 
-Innova_api - Gestão de Portfólio de TI
+
+🏦 Innova_api - Portfólio de Projetos de TI
 # 📌 Sumário
  * Visão Geral
  * Problema que Resolve
