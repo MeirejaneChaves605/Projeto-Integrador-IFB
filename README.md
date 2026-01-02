@@ -375,7 +375,8 @@ API de Gestão de Portfólio com filtros avançados, autenticação JWT e docume
 - [Diagrama de Banco de Dados](#diagrama-de-banco-de-dados)
 - [Documentação da API](#documentação-da-api)
 - [Configuração do Ambiente](#configuração-do-ambiente)
-
+- [Vídeo do Software](#vídeo-do-software)
+  
 #  Visão Geral
 A Innova_api é uma solução robusta de backend desenvolvida para a centralização e governança do portfólio de projetos de TI do banco. O sistema permite o monitoramento de ciclos de vida de software, controle orçamentário e mapeamento de dependências tecnológicas, servindo como fonte de dados para dashboards executivos e auditorias de infraestrutura.
 #  Problema que Resolve
