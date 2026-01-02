@@ -537,6 +537,13 @@ python manage.py migrate
 python manage.py importaCSV
 python manage.py runserver
 
+## Vídeo do Software:
+
+
+https://github.com/user-attachments/assets/a0e4bd7d-d6d4-49c4-bfb1-202a9c9b6559
+
+
+
 * # Desenvolvido por: Ester Luiza Souza Campos, Meirejane Figueredo Chaves e Naylanne Lissa Gomes Cunha
 * # Orientador: Henrique Freitas (IFB)
 
